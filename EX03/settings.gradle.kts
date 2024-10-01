@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Ex03"
+rootProject.name = "Project_cal"
 include(":app")
- 
