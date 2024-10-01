@@ -1,28 +1,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.vongdoi.MainActivity">
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Demo Cycle Life"
-        android:textSize="30sp"
-        android:textStyle="normal|bold"
+        android:text="Chào lớp CR424"
+        android:textSize="18sp"
         android:textColor="@android:color/holo_green_dark"
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/btn_call"
+        android:id="@+id/btnok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Call Dialog"
-        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:text="OK"
+        android:textSize="18sp"
         tools:ignore="HardcodedText" />
 </LinearLayout>
