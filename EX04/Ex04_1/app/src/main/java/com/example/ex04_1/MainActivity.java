@@ -34,22 +34,6 @@ public class MainActivity extends Activity {
             }
         });
 
-        btnCel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DecimalFormat dcf = new DecimalFormat("#.00");
-                String cel = txtCel.getText().toString();
-                double C = Double.parseDouble(cel);
-                txtFar.setText(dcf.format(C * 1.8 + 32));
-            }
-        });
 
-        btnClear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                txtFar.setText("");
-                txtCel.setText("");
-            }
-        });
     }
 }
