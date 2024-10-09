@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent1);
         });
     }
-    //Dotrang
     @Override
     protected void onDestroy() {
         super.onDestroy();
