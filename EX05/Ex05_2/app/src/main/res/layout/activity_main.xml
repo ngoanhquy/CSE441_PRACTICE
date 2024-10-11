@@ -7,13 +7,159 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck">
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#008000"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giải phuơng trình bậc 2"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FA9A"
+                android:text="Nhập a:"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/edt_a"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint=""
+                android:inputType="text"
+                tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FA9A"
+                android:text="Nhập b:"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/edt_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint=""
+                android:inputType="text"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FA9A"
+                android:text="Nhập c:"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/edt_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint=""
+                android:inputType="text"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_tt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tiếp tục"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_pt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Giải PT"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_thoat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thoát"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt_kq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#008000"
+                android:ems="10"
+                android:hint=""
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                tools:ignore="Autofill,LabelFor,SpUsage,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
