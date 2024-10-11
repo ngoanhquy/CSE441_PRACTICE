@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:background="#1E90FF"
             android:gravity="center"
-            android:text="Băng cấp"
+            android:text="Bằng cấp"
             android:textColor="#212121"
             tools:ignore="HardcodedText" />
 
