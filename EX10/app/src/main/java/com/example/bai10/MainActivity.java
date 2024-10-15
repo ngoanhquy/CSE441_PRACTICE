@@ -2,7 +2,6 @@ package com.example.bai10;
 
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
