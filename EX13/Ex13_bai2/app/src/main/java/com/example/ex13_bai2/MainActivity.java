@@ -6,12 +6,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class MainActivity extends AppCompatActivity {
     String[] arr = {"Ipad","Iphone","New Ipad","Samsung","Nokia","Sony Ericson","LG","Q-Mobile","HTC","Blacberry","G-Phone","FPT-Phone"};
