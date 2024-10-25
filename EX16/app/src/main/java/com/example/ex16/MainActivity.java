@@ -27,12 +27,10 @@ public class MainActivity extends AppCompatActivity {
         Button btnClear = findViewById(R.id.btnClear);
         txtLichSu = findViewById(R.id.txtLichSu);
 
-        lichSu = new StringBuilder();  // Dùng để lưu lịch sử phép tính
+        lichSu = new StringBuilder();
 
-        // Xử lý khi nhấn nút "Tổng"
         btnTong.setOnClickListener(v -> calculateSum());
 
-        // Xử lý khi nhấn nút "Clear"
         btnClear.setOnClickListener(v -> clearInputs());
     }
 
@@ -47,20 +45,16 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Chuyển đổi giá trị nhập thành số nguyên
         int a = Integer.parseInt(valueA);
         int b = Integer.parseInt(valueB);
         int sum = a + b;
 
-        // Hiển thị kết quả tổng
         edtKQ.setText(String.valueOf(sum));
 
-        // Lưu lịch sử phép tính
         lichSu.append(a).append(" + ").append(b).append(" = ").append(sum).append("\n");
         txtLichSu.setText(lichSu.toString());
     }
 
-    // Hàm để xóa dữ liệu nhập và kết quả
     private void clearInputs() {
         edtA.setText("");
         edtB.setText("");
